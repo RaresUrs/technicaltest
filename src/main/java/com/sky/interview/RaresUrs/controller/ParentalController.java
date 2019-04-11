@@ -19,9 +19,10 @@ public class ParentalController {
     private ResponseEntity<String> checkParentalControl(@PathVariable int id, @PathVariable String age) throws TitleNotFoundException {
         try {
             parentalControlService.getParentalControl(id, age);
-            return new ResponseEntity<>("You can watch this movie", HttpStatus.OK);
+            return new ResponseEntity<>("You can watch this movie: " + id, HttpStatus.OK);
         } catch (TechnicalFailureException e) {
-            return new ResponseEntity<>("Sorry, due to your age you are now allowed to see this movie", HttpStatus.OK);
+            return new ResponseEntity<>("Sorry, due to your age you are now allowed to see the movie with the id:  "
+                    + id, HttpStatus.OK);
         }
     }
 

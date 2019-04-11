@@ -14,7 +14,6 @@ public class AgeRestrictionComparator implements Comparator<String> {
             return 1;
         } else {
             return Integer.compare(ageOrder.indexOf(o1), ageOrder.indexOf(o2));
-
         }
     }
 }

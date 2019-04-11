@@ -16,17 +16,23 @@ public class ParentalControlServiceImpl {
 
     private AgeRestrictionComparator comparator = new AgeRestrictionComparator();
 
-    public boolean getParentalControl(int movieId, String parentalControlLevel) throws TitleNotFoundException, TechnicalFailureException {
+    public boolean getParentalControl(int movieId, String parentalControlLevel) throws TitleNotFoundException,
+                                                                                TechnicalFailureException {
 
         Movie movie = movieService.findById(movieId);
         if (movie == null) {
             throw new TitleNotFoundException("The movie with the id " + movieId + " does not exist");
         }
 
+        if (movie.getAgeRestriction() == null) {
+            return false;
+        }
+
         final int compare = comparator.compare(parentalControlLevel, movie.getAgeRestriction());
-        if(compare < 0) {
+        if (compare < 0) {
             throw new TechnicalFailureException("Sorry, you are now allowed to watch the movie" + movie.getName());
         }
+
         return compare > 0;
     }
 
