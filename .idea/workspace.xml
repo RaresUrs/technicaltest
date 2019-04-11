@@ -2,27 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea91724a-30fd-4043-8aa8-5c6813fe5ee6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sky/interview/RaresUrs/exception/TechnicalFailureException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sky/interview/RaresUrs/helper/AgeRestrictionComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/sky/interview/RaresUrs/exception/TechnicalFailureException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/sky/interview/RaresUrs/exception/TitleNotFoundException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/sky/interview/RaresUrs/helper/AgeRestrictionComparator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sky/interview/RaresUrs/controller/ParentalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sky/interview/RaresUrs/controller/ParentalController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sky/interview/RaresUrs/repository/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sky/interview/RaresUrs/repository/DataLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sky/interview/RaresUrs/service/movie/MovieServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sky/interview/RaresUrs/service/movie/MovieServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sky/interview/RaresUrs/service/parentalcontrol/ParentalControlServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sky/interview/RaresUrs/service/parentalcontrol/ParentalControlServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sky/interview/RaresUrs/controller/ParentalController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sky/interview/RaresUrs/controller/ParentalController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sky/interview/RaresUrs/repository/DataLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sky/interview/RaresUrs/repository/DataLoader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sky/interview/RaresUrs/service/movie/MovieServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sky/interview/RaresUrs/service/movie/MovieServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sky/interview/RaresUrs/service/parentalcontrol/ParentalControlServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sky/interview/RaresUrs/service/parentalcontrol/ParentalControlServiceImpl.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -38,13 +19,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sky/interview/RaresUrs/service/parentalcontrol/ParentalControlServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+            <state relative-caret-position="180">
+              <caret line="18" column="136" selection-start-line="18" selection-start-column="111" selection-end-line="18" selection-end-column="136" />
               <folding>
-                <element signature="e#1205#1206#0" expanded="true" />
+                <element signature="e#1384#1385#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -81,11 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sky/interview/RaresUrs/controller/ParentalController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="18" column="61" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="61" />
+            <state relative-caret-position="195">
+              <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -148,10 +129,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/sky/interview/RaresUrs/helper/AgeRestrictionComparator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sky/interview/RaresUrs/service/parentalcontrol/TechnicalFailureException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sky/interview/RaresUrs/exception/TechnicalFailureException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sky/interview/RaresUrs/controller/ParentalController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sky/interview/RaresUrs/service/parentalcontrol/ParentalControlServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sky/interview/RaresUrs/repository/DataLoader.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sky/interview/RaresUrs/service/movie/MovieServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sky/interview/RaresUrs/service/parentalcontrol/ParentalControlServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sky/interview/RaresUrs/controller/ParentalController.java" />
       </list>
     </option>
   </component>
@@ -318,12 +299,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1555006496347</updated>
-      <workItem from="1555006504324" duration="3950000" />
+      <workItem from="1555006504324" duration="4233000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3950000" />
+    <option name="totallyTimeSpent" value="4233000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -392,17 +373,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sky/interview/RaresUrs/controller/ParentalController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="18" column="61" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sky/interview/RaresUrs/exception/TitleNotFoundException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="5" selection-start-line="3" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sky/interview/RaresUrs/repository/Movie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-285">
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -417,20 +398,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sky/interview/RaresUrs/repository/DataLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sky/interview/RaresUrs/repository/Movie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-285">
-          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sky/interview/RaresUrs/service/movie/MovieServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -438,13 +405,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sky/interview/RaresUrs/repository/DataLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sky/interview/RaresUrs/service/parentalcontrol/ParentalControlServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+        <state relative-caret-position="180">
+          <caret line="18" column="136" selection-start-line="18" selection-start-column="111" selection-end-line="18" selection-end-column="136" />
           <folding>
-            <element signature="e#1205#1206#0" expanded="true" />
+            <element signature="e#1384#1385#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sky/interview/RaresUrs/controller/ParentalController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
         </state>
       </provider>
     </entry>

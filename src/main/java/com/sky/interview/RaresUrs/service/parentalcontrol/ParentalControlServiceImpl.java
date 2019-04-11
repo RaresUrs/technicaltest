@@ -16,7 +16,7 @@ public class ParentalControlServiceImpl {
 
     private AgeRestrictionComparator comparator = new AgeRestrictionComparator();
 
-    public boolean getParentalControl(int movieId, String parentalControlLevel) throws TitleNotFoundException {
+    public boolean getParentalControl(int movieId, String parentalControlLevel) throws TitleNotFoundException, TechnicalFailureException {
 
         Movie movie = movieService.findById(movieId);
         if (movie == null) {
@@ -24,6 +24,9 @@ public class ParentalControlServiceImpl {
         }
 
         final int compare = comparator.compare(parentalControlLevel, movie.getAgeRestriction());
+        if(compare < 0) {
+            throw new TechnicalFailureException("Sorry, you are now allowed to watch the movie" + movie.getName());
+        }
         return compare > 0;
     }
 

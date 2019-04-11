@@ -16,8 +16,13 @@ public class ParentalController {
     private ParentalControlServiceImpl parentalControlService;
 
     @GetMapping("/check/movie/{age}/{id}")
-    private boolean checkParentalControl(@PathVariable int id, @PathVariable String age) throws TitleNotFoundException, TechnicalFailureException {
-        return parentalControlService.getParentalControl(id, age);
+    private ResponseEntity<String> checkParentalControl(@PathVariable int id, @PathVariable String age) throws TitleNotFoundException {
+        try {
+            parentalControlService.getParentalControl(id, age);
+            return new ResponseEntity<>("You can watch this movie", HttpStatus.OK);
+        } catch (TechnicalFailureException e) {
+            return new ResponseEntity<>("Sorry, due to your age you are now allowed to see this movie", HttpStatus.OK);
+        }
     }
 
     @PostMapping("/request")
