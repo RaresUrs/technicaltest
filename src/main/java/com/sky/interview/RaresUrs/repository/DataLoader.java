@@ -21,7 +21,8 @@ public class DataLoader implements ApplicationRunner {
         movie.save(new Movie("Terminator", "12"));
         movie.save(new Movie("Pirates", "15"));
         movie.save(new Movie("Deadpool", "12"));
-        movie.save(new Movie("Gladiator", "PG"));
-        movie.save(new Movie("Titanic", "AG"));
+        movie.save(new Movie("Gladiator", "U"));
+        movie.save(new Movie("Titanic", "PG"));
+        movie.save(new Movie("Titanic", "15"));
     }
 }

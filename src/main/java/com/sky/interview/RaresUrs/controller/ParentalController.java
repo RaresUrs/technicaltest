@@ -1,5 +1,6 @@
 package com.sky.interview.RaresUrs.controller;
 
+import com.sky.interview.RaresUrs.exception.TechnicalFailureException;
 import com.sky.interview.RaresUrs.repository.Movie;
 import com.sky.interview.RaresUrs.service.parentalcontrol.ParentalControlServiceImpl;
 import com.sky.interview.RaresUrs.exception.TitleNotFoundException;
@@ -15,7 +16,7 @@ public class ParentalController {
     private ParentalControlServiceImpl parentalControlService;
 
     @GetMapping("/check/movie/{age}/{id}")
-    private boolean checkParentalControl(@PathVariable int id, @PathVariable String age) throws TitleNotFoundException {
+    private boolean checkParentalControl(@PathVariable int id, @PathVariable String age) throws TitleNotFoundException, TechnicalFailureException {
         return parentalControlService.getParentalControl(id, age);
     }
 

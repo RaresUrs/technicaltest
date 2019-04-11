@@ -13,11 +13,10 @@ public class MovieServiceImpl {
 
     public Movie findById(int id) throws TitleNotFoundException {
         Movie movie = movieRepository.findById(id);
-        if(movie == null) {
+        if (movie == null) {
             throw new TitleNotFoundException("Movie does not exist: " + id);
         }
         return movieRepository.findById(id);
-
     }
 
     public void save(Movie movie) {

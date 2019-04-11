@@ -12,7 +12,7 @@
 	<artifactId>RaresUrs</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>RaresUrs</name>
-	<description>Interview techical test</description>
+	<description>Interview technical test</description>
 
 	<properties>
 		<java.version>1.8</java.version>
