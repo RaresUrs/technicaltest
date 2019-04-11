@@ -8,8 +8,11 @@ import org.springframework.stereotype.Service;
 @Service
 public class MovieServiceImpl {
 
-    @Autowired
-    private MovieRepository movieRepository;
+    private final MovieRepository movieRepository;
+
+    public MovieServiceImpl(MovieRepository movieRepository) {
+        this.movieRepository = movieRepository;
+    }
 
     public Movie findById(int id) throws TitleNotFoundException {
         Movie movie = movieRepository.findById(id);

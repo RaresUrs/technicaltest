@@ -11,10 +11,13 @@ import org.springframework.stereotype.Service;
 @Service
 public class ParentalControlServiceImpl {
 
-    @Autowired
-    private MovieServiceImpl movieService;
+    private final MovieServiceImpl movieService;
 
     private AgeRestrictionComparator comparator = new AgeRestrictionComparator();
+
+    public ParentalControlServiceImpl(MovieServiceImpl movieService) {
+        this.movieService = movieService;
+    }
 
     public boolean getParentalControl(int movieId, String parentalControlLevel) throws TitleNotFoundException,
                                                                                 TechnicalFailureException {

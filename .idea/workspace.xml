@@ -282,7 +282,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MovieServiceImplTest.asa">
+  <component name="RunManager" selected="Spring Boot.RaresUrsApplication">
     <configuration name="MovieServiceImplTest.abc" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RaresUrs" />
       <extension name="coverage">
