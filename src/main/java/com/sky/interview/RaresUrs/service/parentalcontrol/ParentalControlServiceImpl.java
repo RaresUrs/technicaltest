@@ -15,6 +15,7 @@ public class ParentalControlServiceImpl {
 
     private AgeRestrictionComparator comparator = new AgeRestrictionComparator();
 
+    @Autowired
     public ParentalControlServiceImpl(MovieServiceImpl movieService) {
         this.movieService = movieService;
     }

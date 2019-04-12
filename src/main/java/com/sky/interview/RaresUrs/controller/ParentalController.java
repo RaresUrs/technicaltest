@@ -23,6 +23,9 @@ public class ParentalController {
         } catch (TechnicalFailureException e) {
             return new ResponseEntity<>("Sorry, due to your age you are now allowed to see the movie with the id:  "
                     + id, HttpStatus.OK);
+        } catch (TitleNotFoundException movieNotFound) {
+            return new ResponseEntity<>("Sorry, the move you are looking for does not exist  "
+                    + id, HttpStatus.OK);
         }
     }
 

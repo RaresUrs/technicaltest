@@ -10,6 +10,7 @@ public class MovieServiceImpl {
 
     private final MovieRepository movieRepository;
 
+    @Autowired
     public MovieServiceImpl(MovieRepository movieRepository) {
         this.movieRepository = movieRepository;
     }
