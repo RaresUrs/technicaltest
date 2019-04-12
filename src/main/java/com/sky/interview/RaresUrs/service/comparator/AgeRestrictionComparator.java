@@ -1,4 +1,4 @@
-package com.sky.interview.RaresUrs.helper;
+package com.sky.interview.RaresUrs.service.comparator;
 
 import java.util.Arrays;
 import java.util.Comparator;

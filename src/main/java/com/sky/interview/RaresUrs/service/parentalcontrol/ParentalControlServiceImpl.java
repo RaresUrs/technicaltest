@@ -2,7 +2,7 @@ package com.sky.interview.RaresUrs.service.parentalcontrol;
 
 import com.sky.interview.RaresUrs.exception.TechnicalFailureException;
 import com.sky.interview.RaresUrs.exception.TitleNotFoundException;
-import com.sky.interview.RaresUrs.helper.AgeRestrictionComparator;
+import com.sky.interview.RaresUrs.service.comparator.AgeRestrictionComparator;
 import com.sky.interview.RaresUrs.repository.Movie;
 import com.sky.interview.RaresUrs.service.movie.MovieServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,10 +37,10 @@ public class ParentalControlServiceImpl {
         return compare > 0;
     }
 
-    protected int isUserAllowedToWatchMovie(String parentalControlLevel, Movie movie) throws TechnicalFailureException {
+    private int isUserAllowedToWatchMovie(String parentalControlLevel, Movie movie) throws TechnicalFailureException {
         final int compare = comparator.compare(parentalControlLevel, movie.getAgeRestriction());
         if (compare < 0) {
-            throw new TechnicalFailureException("Sorry, you are now allowed to watch the movie " + movie.getName());
+            throw new TechnicalFailureException("Sorry, you are now allowed to watch the movie: " + movie.getName());
         }
         return compare;
     }

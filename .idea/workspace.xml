@@ -346,23 +346,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.com.sky.interview.RaresUrs.service.parentalcontrol in RaresUrs">
-    <configuration name="ParentalControlServiceImplTest.abc" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="RaresUrs" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sky.interview.RaresUrs.service.parentalcontrol.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.sky.interview.RaresUrs.service.parentalcontrol" />
-      <option name="MAIN_CLASS_NAME" value="com.sky.interview.RaresUrs.service.parentalcontrol.ParentalControlServiceImplTest" />
-      <option name="METHOD_NAME" value="abc" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.com.sky.interview.RaresUrs in RaresUrs">
     <configuration name="ParentalControlServiceImplTest.testWhenCustomerIsAllowedToWatchTheMovie" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RaresUrs" />
       <extension name="coverage">
@@ -411,6 +395,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.sky.interview.RaresUrs in RaresUrs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RaresUrs" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sky.interview.RaresUrs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sky.interview.RaresUrs" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="com.sky.interview.RaresUrs.service.parentalcontrol in RaresUrs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RaresUrs" />
       <extension name="coverage">
@@ -434,11 +432,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.com.sky.interview.RaresUrs in RaresUrs" />
         <item itemvalue="JUnit.com.sky.interview.RaresUrs.service.parentalcontrol in RaresUrs" />
         <item itemvalue="JUnit.ParentalControlServiceImplTest.testWhenMovieIsNotFound" />
         <item itemvalue="JUnit.ParentalControlServiceImplTest.testWhenCustomerIsAllowedToWatchTheMovie" />
         <item itemvalue="JUnit.ParentalControlServiceImplTest.testWhenTheMovieCanBeFound" />
-        <item itemvalue="JUnit.ParentalControlServiceImplTest.abc" />
       </list>
     </recent_temporary>
   </component>
