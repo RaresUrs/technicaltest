@@ -29,7 +29,7 @@ public class ParentalController {
         }
     }
 
-    @PostMapping("/request")
+    @PostMapping("/add/movie")
     public ResponseEntity saveMovie(@RequestBody Movie movie) {
         parentalControlService.save(movie);
         return ResponseEntity.ok(HttpStatus.OK);
