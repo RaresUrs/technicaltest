@@ -4,6 +4,7 @@ import com.sky.interview.RaresUrs.exception.TitleNotFoundException;
 import com.sky.interview.RaresUrs.repository.Movie;
 import com.sky.interview.RaresUrs.service.movie.MovieRepository;
 import com.sky.interview.RaresUrs.service.movie.MovieServiceImpl;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
@@ -23,24 +24,28 @@ public class MovieServiceImplTest {
     @InjectMocks
     private MovieServiceImpl movieService;
 
-    @Test
-    public void testWhenTheMovieCanBeFound() throws TitleNotFoundException {
-        Movie movie = new Movie();
+    private Movie movie;
+
+    @Before
+    public void setUp() {
+        movie = new Movie();
         movie.setAgeRestriction("12");
         movie.setId(1);
+    }
 
+    @Test
+    public void testWhenTheMovieCanBeFound() throws TitleNotFoundException {
         when(movieRepository.findById(1)).thenReturn(movie);
-        Movie reponse = movieService.findById(1);
-        assertEquals(reponse.getAgeRestriction(), movie.getAgeRestriction());
+
+        Movie response = movieService.findById(1);
+        assertEquals(response.getAgeRestriction(), movie.getAgeRestriction());
     }
 
     @Test(expected = TitleNotFoundException.class)
     public void testExceptionWhenMovieCannotBeFound() throws TitleNotFoundException {
-        Movie movie = new Movie();
-        movie.setAgeRestriction("12");
-        movie.setId(1);
         when(movieRepository.findById(1)).thenReturn(movie);
-        Movie reponse = movieService.findById(2);
-        assertEquals(reponse.getAgeRestriction(), movie.getAgeRestriction());
+
+        Movie response = movieService.findById(2);
+        assertEquals(response.getAgeRestriction(), movie.getAgeRestriction());
     }
 }

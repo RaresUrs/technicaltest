@@ -6,7 +6,7 @@ import java.util.List;
 
 public class AgeRestrictionComparator implements Comparator<String> {
 
-    private List<String> ageOrder = Arrays.asList("U", "PG", "12", "15", "18");
+    private final List<String> ageOrder = Arrays.asList("U", "PG", "12", "15", "18");
 
     @Override
     public int compare(final String o1, final String o2) {
