@@ -21,7 +21,7 @@ public class ParentalControlServiceImpl {
     }
 
     public boolean getParentalControl(int movieId, String parentalControlLevel) throws TitleNotFoundException,
-                                                                                TechnicalFailureException {
+            TechnicalFailureException {
 
         Movie movie = movieService.findById(movieId);
         if (movie == null) {
@@ -32,12 +32,17 @@ public class ParentalControlServiceImpl {
             return false;
         }
 
-        final int compare = comparator.compare(parentalControlLevel, movie.getAgeRestriction());
-        if (compare < 0) {
-            throw new TechnicalFailureException("Sorry, you are now allowed to watch the movie" + movie.getName());
-        }
+        final int compare = isUserAllowedToWatchMovie(parentalControlLevel, movie);
 
         return compare > 0;
+    }
+
+    protected int isUserAllowedToWatchMovie(String parentalControlLevel, Movie movie) throws TechnicalFailureException {
+        final int compare = comparator.compare(parentalControlLevel, movie.getAgeRestriction());
+        if (compare < 0) {
+            throw new TechnicalFailureException("Sorry, you are now allowed to watch the movie " + movie.getName());
+        }
+        return compare;
     }
 
     public void save(Movie movie) {
